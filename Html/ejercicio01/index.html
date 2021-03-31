@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 01</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	</head>
+	<body>
+    <h1>Primer titulo con h1</h1>
+    <h2>Segundo titulo con h2 (con retorno de carro)</h2>
+    </br>
+    <section id="links">
+      <h2>Grupo de elementos de navegacion</h2>
+      <ul>
+        <!-- uso rel="noopener noreferer" para evitar tabnabbing (forma de phishing) -->
+        <li><a href="https://www.youtube.com/" rel="noopener noreferer" target="_blank">You Tube</a></li>
+        <li><a href="https://www.google.com/" rel="noopener noreferer" target="_blank">Google</a></li>
+        <li><a href="https://www.geogebra.org/" rel="noopener noreferer" target="_blank">Geogebra</a></li>
+      </ul>
+      <hr/>
+        <a href="./otroHtml.html">Enlace en la misma pagina</a> | 
+        <a href="./otroHtml.html" rel="noopener noreferer" target="_blank">Enlace en otra pestaña</a> | 
+        <a href="#anclaje">Ancla a otro punto de la pagina</a>
+      <hr/>
+    </section>
+    <main>
+      <h1>Cuerpo principal del contenido</h1>
+      <article id="respuestas">
+        <h2>Respuestas del cuestionario</h2>
+        <ol>
+          <li><b>Dar un par de ejemplos de uso de etiquetas meta:</b> para definir el autor, el charset o para agregar palabras clave para motores de busqueda</li>
+          <li><b>Nombrar al menos 2 atributos aplicables a la etiqueta HTML:</b> xmlns, lang, translate, id, class, style, data-*, hidden, tabindex </li>
+          <li><b>Como se relaciona un header http con la etiqueta head de HTML?</b> La etiqueta head contiene metadatos del documento que son utilizados en el header http</li>
+          <li><b>Que es UTF8?</b> UTF8 es la codificacion o set de caracteres utilizados en el documento</li>
+          <li><b>Que atributo HTML sirve para aplicar estilo, a que etiqueta es aplicable?</b> El atributo para aplicar estilo es style y se puede aplicar a cualquier etiqueta ya que es un atributo global</li>
+          <li><b>Donde se indica que un enlace debe ubicar el documento en una nueva pestaña?</b> Se indica con el atributo target y el valor _blank</li>
+          <li><b>Explicar cuando usarían etiquetas semánticas y con que propósito</b> Usaria etiquetas semanticas para estructurar el documento y para que se indexe a los motores de busqueda</li>
+          <li><b>¿Que atributos de estilo básicos aplicarían a una tabla? Explicar</b> Usaria border:solid para mostrar bordes solidos y border-collapse:collapse para que los bordes de celdas contiguas colapsen en uno solo</li>
+          <li><b>¿Que diferencia existe entre la etiqueta body de un documento HTML y el body del protocolo HTTP?</b> La etiqueta body es donde va el contenido de un documento HTML, mientras que el body del protocolo contiene los datos de respuesta de una request</li>
+          <li><b>¿Que atributos marcan la agrupación de celdas de una tabla?. ¿A que etiquetas se aplican?</b> Los atributos colSpan y rowSpan marcan la agrupacion de celdas, estos pueden ser usados en etiquetas td</li>
+        </ol>
+      </article>
+    </main>
+    <section id="imagen">
+      <h2>Seccion de imagenes</h2>
+      <p>Seccion para imagenes del sitio</p>
+      <img src="./trono_de_pesadilla.png" alt="Trono de pesadilla"/>
+      <p>Imagen de 640x360</p>
+    </section>
+    <section id="video">
+      <h2>Seccion de video</h2>
+      <p>Telephone Number by Junko Ohashi</p>
+      <video width="360" height="360" controls>
+        <source src="./awoo56709.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <section id="anclaje">
+      <h2>Anclaje</h2>
+      <p>Solo es el punto de anclado de ejemplo</p>
+    </section>
+	</body>
+  <footer>
+    <h2>Datos del alumno</h2>
+    <p>Ivan Baigorria</p>
+    <p>unbaigorria.ivan@gmail.com</p>
+    <p>ivan@nomades.com</p>
+  </footer>
+</html>
