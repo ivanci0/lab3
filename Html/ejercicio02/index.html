@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 02</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<script></script>
+	</head>
+	<style>
+		table {
+			border: solid;
+			border-collapse: collapse;
+		}
+		table > tbody > tr > td {
+			border: solid;
+			height: 30px;
+			width: 70px;
+		}
+		.azulita {
+			background-color: lightblue;
+		}
+	</style>
+	<body>
+		<h1>Tabla representando la matriz entera</h1>
+		<table id="programada"></table>
+		<h1>Tabla agrupando celdas y agregando estilo</h1>
+		<table>
+			<tbody>
+				<tr>
+					<td rowspan="2" colspan="2" class="azulita"></td>
+					<td colspan="3" class="azulita">LUNES</td>
+					<td colspan="3" class="azulita">MARTES</td>
+					<td colspan="3" class="azulita">MIERCOLES</td>
+					<td colspan="3" class="azulita">JUEVES</td>
+					<td colspan="3" class="azulita">VIERNES</td>
+				</tr>
+				<tr>
+					<td class="azulita">M</td>
+					<td class="azulita">T</td>
+					<td class="azulita">N</td>
+					<td class="azulita">M</td>
+					<td class="azulita">T</td>
+					<td class="azulita">N</td>
+					<td class="azulita">M</td>
+					<td class="azulita">T</td>
+					<td class="azulita">N</td>
+					<td class="azulita">M</td>
+					<td class="azulita">T</td>
+					<td class="azulita">N</td>
+					<td class="azulita">M</td>
+					<td class="azulita">T</td>
+					<td class="azulita">N</td>
+				</tr>
+				<tr>
+					<td rowspan="3" class="azulita">LAB1</td>
+					<td class="azulita">PC1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="azulita">PC2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="azulita">PC3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td rowspan="3" class="azulita">LAB2</td>
+					<td class="azulita">PC1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="azulita">PC2</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="azulita">PC3</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>la ultima</h2>
+		<table id="estilada"></table>
+		<script>
+			// ::::: La tabla programada :::::
+			let tbody = document.createElement("tbody");
+			let tabla = document.getElementById("programada");
+			let trs = Array.from({length: 8}, v => document.createElement("tr"));
+
+			trs.forEach(tr => {
+				let tds = Array.from({length: 17}, v => document.createElement("td"));
+				tr.append(...tds);
+			})
+			tbody.append(...trs);
+			tabla.append(tbody);
+
+
+			// ::::: Aca empieza la estilada :::::
+			let estilada = document.getElementById("estilada");
+			let estiladaBody = document.createElement("tbody");
+
+			let trDias = document.createElement("tr");
+			let dias = ["", "LUNES", "MARTES", "MIERCOLES", "JUEVES", "VIERNES"]
+			let tdsDias = dias.map((dia, i) => {
+				let td = document.createElement("td");
+				td.setAttribute("class", "azulita");
+
+				if (i === 0) {
+					td.setAttribute("rowspan", "2");
+					td.setAttribute("colspan", "2");
+				} else {
+					td.setAttribute("colspan", "3");
+					td.innerText = dia;
+				}
+				return td;
+			})
+			trDias.append(...tdsDias);
+
+			let trTurnos = document.createElement("tr");
+			let turnos = ["M","T","N"];
+			for (let i = 0; i<5; i++) {
+				tdsTurnos = turnos.map(t => {
+					let td = document.createElement("td");
+					td.classList.add("azulita");
+					td.innerText = t
+					return td
+				})
+				trTurnos.append(...tdsTurnos);
+			}
+
+			let trsDatos = Array.from({length: 6}, v => document.createElement("tr"));
+			trsDatos.forEach((tr, i) => {
+				let numero = i+1 > 3 ? i - 2 : i + 1;
+				let pcText = `PC${numero}`;
+				let pc = document.createElement("td");
+				pc.innerText = pcText;
+				pc.classList.add("azulita");
+
+				let tdsDatos = Array.from({length: 15}, v => {
+					let td = document.createElement("td");
+					td.innerText = "DATO";
+					return td;
+				});
+
+				if (i === 0 || i === 3) {
+					let lab = document.createElement("td");
+					lab.innerText = i === 0 ? "LAB1" : "LAB2";
+					lab.setAttribute("rowspan", "3");
+					lab.classList.add("azulita");
+					tr.append(lab);
+				}
+				tr.append(pc);
+				tr.append(...tdsDatos);
+			})
+			
+
+			estiladaBody.append(trDias);
+			estiladaBody.append(trTurnos);
+			estiladaBody.append(...trsDatos);
+			estilada.append(estiladaBody);
+		</script>
+	</body>
+</html>
