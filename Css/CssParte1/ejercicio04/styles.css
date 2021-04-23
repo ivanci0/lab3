@@ -1,0 +1,20 @@
+div.elementoCentrado {
+  margin:auto;
+  width:50%;
+  background-color:lightblue;
+}
+div.conPadding {
+  padding-left:10%;
+  padding-right:10%;
+  margin:auto;
+  width:50%;
+  background-color:green;
+}
+div.conBoxSize {
+  box-sizing:border-box;
+  padding-left:10%;
+  padding-right:10%;
+  margin:auto;
+  width:50%;
+  background-color:orange;
+}
