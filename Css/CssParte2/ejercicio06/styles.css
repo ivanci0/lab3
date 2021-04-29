@@ -1,0 +1,40 @@
+img {
+  max-height: 70%;
+  max-width: 70%;
+  margin: 1%;
+}
+.caja {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 200px;
+  border: solid 1px;
+  border-radius: 3%;
+  font-size: 12px;
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#div1, #div4 {
+  box-shadow: 16px 8px 2px rgba(0,0,0,0.3);
+}
+#div3, #div5 {
+  background: linear-gradient(45deg, orange, white, pink);
+}
+#contenedor {
+  width: 80%;
+  margin: auto;
+  background-color: lightblue;
+  flex-direction: column;
+}
+#div1 {
+  background: linear-gradient(orange, white, pink);
+}
+#div2 {
+  background: radial-gradient(orange, white, pink);
+  font-size: 2em;
+}
+#div4 {
+  background: linear-gradient(-45deg, orange, white, pink);
+}

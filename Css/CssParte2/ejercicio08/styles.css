@@ -1,0 +1,23 @@
+#contenedor {
+  display: flow-root;
+  width: 90%;
+  margin: auto;
+  background-color: lightgoldenrodyellow;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 1%;
+}
+.caja {
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  float: left;
+  max-width: 30%;
+  margin: 10px;
+  background-color: lightblue;
+  box-sizing: border-box;
+}

@@ -1,0 +1,63 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+h1 {
+  margin: 0px;
+}
+#contenedor {
+  border-color: black;
+  border: solid 1px;
+  width: 90%;
+  margin: auto;
+  background-color: lightgoldenrodyellow;
+}
+.contenedorRelativoClase1 {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-left: 0%;
+  margin-top: 10px;
+  width: 80%;
+  font-size: 2em;
+  background-color: green;
+}
+.contenedorRelativoClase2 {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-left: 15%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+  font-size: 2em;
+  background-color: yellow;
+}
+.contenedorRelativoClase3 {
+  box-sizing: border-box;
+  padding: 10px;
+  margin-left: 30%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 250px;
+  font-size: 2em;
+  background-color: orange;
+  overflow: auto;
+}
+.divParaVentanaModal {
+  padding: 3%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  width: 50%;
+  height: 250px;
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  opacity: 0.5;
+  overflow-y: auto;
+  visibility: visible;
+  z-index: 10;
+}

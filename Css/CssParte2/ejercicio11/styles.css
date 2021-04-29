@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1, h2 {
+  margin: 0px;
+}
+img {
+  max-height: 80%;
+  max-width: 100%;
+}
+#contenedor {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background-color: lightblue;
+}
+.contenedorInterno1 {
+  background-color: lightseagreen;
+  position: absolute;
+  top: 30%;
+  width: 15%;
+  height: 30%;
+  overflow: auto;
+  font-size: 1vw;
+}
+div.contenedorInterno2 {
+  background-color: greenyellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  font-size: 1vw;
+  overflow: auto;
+}
+.contenedorInterno3 {
+  background-color: gray;
+  opacity: 0.5;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 20%;
+  height: 40%;
+  overflow: auto;
+  font-size: 1vw;
+}

@@ -1,0 +1,51 @@
+input {
+  display: block;
+  width: 150px;
+}
+input:focus {
+  background-color: cornflowerblue;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#contenedor {
+  display: flow-root;
+  width: 90%;
+  margin: auto;
+  background-color: lightblue;
+}
+.btn {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  background-color: gray;
+  border: solid 1px;
+  border-color: blue;
+  color: black;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: darkblue;
+  color: white;
+}
+.btn:active {
+  background-color: yellow;
+}
+.nuevaFila {
+  clear: both;
+}
+.caja {
+  float: left;
+  width: 120px;
+  height: 120px;
+  border-color: black;
+  border: solid 1px;
+}
+.caja:active {
+  width: 720px;
+  height: 480px;
+}

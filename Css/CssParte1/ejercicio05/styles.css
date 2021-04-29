@@ -1,5 +1,5 @@
 div#cajaConImagenDeFondo {
-  background-image:url('./la_imagen.png'); 
+  background-image:url('../../img/la_imagen.png'); 
   opacity: 0.5;
   background-repeat:no-repeat; 
   background-position:center center;
