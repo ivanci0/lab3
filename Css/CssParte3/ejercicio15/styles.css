@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 0px;
+}
+table {
+  border: solid;
+  border-color: black;
+  border-collapse: collapse;
+  width: 100%;
+}
+/*thead {
+  background-color: coral;
+}*/
+thead > tr > th {
+  position: sticky; 
+  top: 0; 
+  z-index: 1;
+  background-color: coral;
+}
+.tableResponsive {
+  overflow-y: auto;
+  height: 300px;
+}
+/*
+tbody {
+  max-height: 200px;
+  overflow: auto;
+}*/
+tr {
+  height: 50px;
+}
+header {
+  text-align: center;
+  max-height: 5%;
+  height: 5%;
+  background-color: teal;
+}
+#contenedor {
+  box-sizing: border-box;
+  height: 95%;
+  background-color: darkcyan;
+}
+[campo-dato='id'] {
+  width: 5%;
+}
+tbody tr:nth-child(odd) {
+background: rgba(0,0,0,.2);
+}
+@media (max-width:1200px){ 
+  [campo-dato='skype'] {
+    display:none;
+  }
+}
+@media (max-width:1000px){ 
+  [campo-dato='twitter'] {
+    display:none;
+  }
+  header {
+    max-height: none;
+    height: auto;
+  }
+}
+@media (max-width:800px){ 
+  [campo-dato='web'] {
+    display:none;
+  }
+}
+@media (max-width:600px){ 
+  [campo-dato='mail'] {
+    display:none;
+  }
+}

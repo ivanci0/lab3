@@ -1,0 +1,80 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header, footer {
+  height: 10%;
+  background-color: gray;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  box-sizing: border-box;
+  width: 20%;
+  height: 80%;
+  float: left;
+  background-color: coral;
+}
+h1 {
+  margin: 0;
+}
+#menu h1 {
+  width: 90%;
+  height: 50px;
+  text-align: center;
+}
+#menu ul {
+  height: 50px;
+  text-align: center;
+  width: 60%;
+  list-style: none;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+#menu ul li div {
+  height: 40px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+#menu ul li div:hover {
+  background-color: gray;
+}
+#menu ul li a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: lightslategray;
+}
+#menu ul li a:hover {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+#contenedor {
+  box-sizing: border-box;
+  height: 100%;
+  width: 90%;
+  right: 0;
+  margin: auto;
+  background-color: lightgray;
+}
+#yield {
+  height: 80%;
+  width: 80%;
+  margin-left: 20%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 10px;
+}

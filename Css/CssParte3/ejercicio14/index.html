@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 14 Forms RWD</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<link rel="stylesheet" type="text/css" href="./styles.css"/>
+	</head>
+	<body>
+    <header>
+      <h1>Formulario</h1>
+    </header>
+    <form action="./respuestaForm.html">
+      <div class="entrada">
+        <label>1Apellido:</label>
+        <input type="text" id="apellido" name="apellido" autofocus/>
+      </div>
+      <div class="entrada">
+        <label>2Nombres:</label>
+        <input type="text" id="nombres" name="nombres" />
+      </div>
+      <div class="entrada">
+        <label>3Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" />
+      </div>
+      <div class="entrada">
+        <label>4Campo deshabilitado:</label>
+        <input type="text" id="deshabilitado" name="deshabilitado" value="valor deshabilitado" disabled/>
+      </div>
+      <div class="entrada">
+        <label>5Fecha y hora:</label>
+        <input type="date" id="date" name="date"/>
+      </div>
+      <div class="entrada">
+        <label>6DNI:</label>
+        <input type="text" id="dni" name="dni"/>
+      </div>
+      <div class="entrada">
+        <label>7Actividades extracurriculares:</label>
+        <label for="musica">Musica:</label>
+        <input type="checkbox" id="musica" name="musica"/>
+        <label for="pintura">Pintura artistica:</label>
+        <input type="checkbox" id="pintura" name="pintura"/>
+        <label for="deportes">Deportes:</label>
+        <input type="checkbox" id="deportes" name="deportes"/>
+        <label for="teatro">Teatro:</label>
+        <input type="checkbox" id="teatro" name="teatro"/>
+      </div>
+      <div class="entrada">
+        <label>8Sexo:</label>
+        <label>Masculino</label>
+        <input type="radio" id="masculino" name="sexo" value="m" checked/>
+        <label>Femenino</label>
+        <input type="radio" id="femenino" name="sexo" value="f"/>
+      </div>
+      <div class="entrada">
+        <h3>9Vacio</h3>
+      </div>
+      <div class="entrada">
+        <label>10Estudios cursados:</label>
+        <select id="estudios" name="estudios">
+          <option value="pri">Primario</option>
+          <option value="sec">Secundario</option>
+          <option value="ter">Terciario</option>
+          <option value="uni">Universitario</option>
+          <option value="pos">Postgrado</option>
+        </select>
+      </div>
+      <div class="entrada">
+        <label>11Area de desempeño:</label>
+        <select id="desempeño" name="desempeño">
+          <option value="adm">Administracion</option>
+          <option value="stf">Staff</option>
+          <option value="otr">Otro</option>
+        </select>
+      </div>
+      <div class="entrada">
+        <label>12Turno:</label>
+        <select id="turno" name="turno">
+          <option value="man">Mañana</option>
+          <option value="tar">Tarde</option>
+          <option value="noc">Noche</option>
+        </select>
+      </div>
+      <div class="entrada">
+        <label>13Conduce:</label>
+        <label>Si</label>
+        <input type="radio" id="si" name="conduce" value="s" checked/>
+        <label>No</label>
+        <input type="radio" id="no" name="conduce" value="n"/>
+      </div>
+      <div class="barraControl">
+        <button type="submit" class="boton">Enviar</button>
+        <button type="reset" class="boton">Reset</button>
+      </div>
+    </form>
+    <footer>
+      <h1>Pie de formulario</h1>
+    </footer>
+	</body>
+</html>
