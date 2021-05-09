@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#contenedor {
+  box-sizing: border-box;
+  height: 40%;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  background-color: gray;
+}
+#carga {
+  width: 90%;
+  height: 60%;
+  margin: auto;
+  background-color: lightblue;
+}
+#display {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  height: 30px;
+  text-align: right;
+}
+#operaciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  background-color: lightyellow;
+}
+#botonera {
+  width: 60%;
+  height: 80%;
+}
+table {
+  width: 100%;
+  height: 90%;
+  text-align: center;
+}
+table tbody tr td button {
+  width: 100%;
+}
+#borrarAcum {
+  clear: both;
+}
+.boton {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+}

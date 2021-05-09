@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 05 Alcance</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	</head>
+	<body>
+    <div id="container" style="width:auto;">
+      <button id="incorrecta" style="width:33%;" title="Inicializa variable global desde adentro de una funcion con declaracion var">Inicializacion incorrecta</button>
+      <button id="correcta" style="width:33%;" title="Inicializa variable global desde adentro de una funcion sin declaracion var">Inicializacion correcta</button>
+      <button id="mostrar" style="width:33%;">Muestra variable global</button>
+    </div>
+    <script type="text/javascript">
+      var a;
+      document.getElementById("incorrecta").onclick = () => {
+        var a = prompt("Ingrese valor para la variable global:");
+        alert("El valor de la variable ingresada es: " + a);
+        alert("El tipo de la variable ingresada es: " + typeof a);
+      }
+      document.getElementById("correcta").onclick = () => {
+        a = prompt("Ingrese valor para la variable global:");
+        alert("El valor de la variable ingresada es: " + a);
+        alert("El tipo de la variable ingresada es: " + typeof a);
+      }
+      document.getElementById("mostrar").onclick = () => {
+        if (a) {
+          alert("Valor de la variable global: " + a);
+        } else {
+          alert("La variable global no ha sido asignada");
+        }
+      }
+    </script>
+	</body>
+</html>

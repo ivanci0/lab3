@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 09 Convertir a mayusculas</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+    <div id="contenedor">
+      <div id="carga">
+        <label>Ingrese nombre:</label>
+        <input id="nombre"/>
+        <label>Ingrese apellido:</label>
+        <input id="apellido"/>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("nombre").onchange = () => document.getElementById("nombre").value = document.getElementById("nombre").value.toUpperCase();
+      document.getElementById("apellido").onchange = () => document.getElementById("apellido").value = document.getElementById("apellido").value.toUpperCase();
+    </script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 08 Operaciones entre inputs</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+    <header><h2>Introducir un valor en los cuadros de texto y luego pulsar el boton para ejecutar la funcion correspondiente.</h2></header>
+    <div id="contenedor">
+      <div id="carga">
+        <label>Entrada 1:</label>
+        <input id="entrada1"/>
+        <label>Entrada 2:</label>
+        <input id="entrada2"/>
+        <label>Entrada 3:</label>
+        <input id="entrada3"/>
+        <label>Resultado:</label>
+        <input id="resultado" readonly/>
+      </div>
+      <div id="operaciones">
+        <button id="suma">Suma</button>
+        <button id="promedia">Promedia</button>
+        <button id="mayor">Mayor</button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const suma = () => 
+        parseInt(document.getElementById("entrada1").value | 0) + 
+        parseInt(document.getElementById("entrada2").value | 0) + 
+        parseInt(document.getElementById("entrada3").value | 0);
+        
+      const mayor = (a,b) => a > b ? a : b;
+
+      document.getElementById("suma").onclick = () => document.getElementById("resultado").value = suma();
+      document.getElementById("promedia").onclick = () => document.getElementById("resultado").value = suma() / 3;
+      document.getElementById("mayor").onclick = () => document.getElementById("resultado").value = mayor(mayor(document.getElementById("entrada1").value, document.getElementById("entrada2").value), document.getElementById("entrada3").value);
+    </script>
+	</body>
+</html>
