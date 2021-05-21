@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+}
+#contenedor {
+  box-sizing: border-box;
+  height: 30%;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  background-color: lightblue;
+}
+#formulario {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#operaciones {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}

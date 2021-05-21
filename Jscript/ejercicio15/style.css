@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+button {
+  margin-top: 10px;
+}
+.listaEstilada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid;
+  width: 150px;
+}
+.tipo1 {
+  background-color: aquamarine;
+}
+.tipo1 ul {
+  list-style-type: square;
+}
+.tipo2 {
+  background-color: lightblue;
+  color: blue;
+}
+.tipo2 ul {
+  list-style-type: circle;
+}
+.tipo3 {
+  background-color: darkgoldenrod;
+  color: white;
+  border-color: red;
+}
+.tipo3 ul {
+  list-style-type: lower-alpha;
+}
+.tipo4 {
+  background-color: lightgreen;
+  color: green;
+}

@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+}
+button {
+  margin: 10px 10px;
+}

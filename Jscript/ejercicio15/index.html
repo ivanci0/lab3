@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 15 Conmutacion dinamica de clases</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+    <header><h2>Ejemplo de cambios de estilo dinamicamente</h2></header>
+    <div id="contenedorLista">
+      <h3>Lista con estilo</h3>
+      <ul>
+        <li>Texto 1</li>
+        <li>Texto 2</li>
+        <li>Texto 3</li>
+      </ul>
+    </div>
+    <button id="tipo1" type="button">Tipo 1</button>
+    <button id="tipo2" type="button">Tipo 2</button>
+    <button id="tipo3" type="button">Tipo 3</button>
+    <button id="tipo4" type="button">Tipo 4</button>
+    <script type="text/javascript">
+      document.getElementById("tipo1").onclick = () => document.getElementById("contenedorLista").className = "listaEstilada tipo1";
+      document.getElementById("tipo2").onclick = () => document.getElementById("contenedorLista").className = "listaEstilada tipo2";
+      document.getElementById("tipo3").onclick = () => document.getElementById("contenedorLista").className = "listaEstilada tipo3";
+      document.getElementById("tipo4").onclick = () => document.getElementById("contenedorLista").className = "listaEstilada tipo4";
+    </script>
+	</body>
+</html>

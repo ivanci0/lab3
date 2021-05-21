@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 10 Variables de tipo objeto de dato</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+    <header><h2>Agregar personas</h2></header>
+    <div id="contenedorCarga" class="contenedor">
+      <div id="carga">
+        <label>Nombre</label>
+        <input id="nombre"/>
+        <label>Apellido</label>
+        <input id="apellido"/>
+        <label>Fecha de nacimiento</label>
+        <input id="fechaNacimiento" type="date"/>
+      </div>
+      <div id="operaciones">
+        <button id="crearPersona">Crear persona</button>
+      </div>
+    </div>
+    <header><h2>Control</h2></header>
+    <div id="contenedorTabla" class="contenedor">
+      <div id="control">
+        <button id="listarPersonas">Listar personas</button>
+        <button id="ocultarTabla">Ocultar presentacion</button>
+      </div>
+      <table id="tabla"></table>
+    </div>
+    <script type="text/javascript">
+      // ::::: Funciones y variables principales :::::
+      var personas = [];
+      let tbody = document.createElement("tbody");
+			let tabla = document.getElementById("tabla");
+			tabla.append(tbody);
+
+      const popularTabla = (datos = [], body) => {
+
+        // #Agrega headers
+        let trHeader = document.createElement("tr");
+			  let titulos = ["Nombre", "Apellido", "Fecha de nacimiento"];
+
+        let tdsTitulos = titulos.map((titulo, i) => {
+          let td = document.createElement("td");
+          td.classList.add("titulos");
+          td.innerText = titulo;
+          return td;
+        })
+        trHeader.append(...tdsTitulos);
+
+        // #Agrega datos
+        let rows = datos.map(persona => {
+          let trPersona = document.createElement("tr");
+          let tdsPersona = Array.from({length: 3}, v => document.createElement("td"));
+
+          tdsPersona[0].innerText = persona.nombre;
+          tdsPersona[1].innerText = persona.apellido;
+          tdsPersona[2].innerText = persona.fechaNacimiento;
+
+          trPersona.append(...tdsPersona);
+          return trPersona;
+        })
+
+        // #Agrega footer
+        let trFooter = document.createElement("tr");
+        let tdFooter = document.createElement("td");
+        tdFooter.setAttribute("colspan", "3")
+        tdFooter.innerHTML = `Longitud del arreglo de objetos: ${rows.length}`;
+        trFooter.append(tdFooter);
+
+        body.append(trHeader);
+        body.append(...rows);
+        body.append(trFooter);
+      }
+
+      const vaciarTabla = (body) => {
+        while (body.firstChild) {
+          body.removeChild(body.firstChild);
+        }
+      }
+
+      const mostrarTabla = () => {
+        document.getElementById("tabla").style.display = "table";
+      }
+
+      // ::::: Handlers :::::
+      document.getElementById("ocultarTabla").onclick = () => document.getElementById("tabla").style.display = "none";
+      document.getElementById("listarPersonas").onclick = () => mostrarTabla();
+      document.getElementById("crearPersona").onclick = () => {
+        let persona = {
+          nombre: document.getElementById("nombre").value,
+          apellido: document.getElementById("apellido").value,
+          fechaNacimiento: document.getElementById("fechaNacimiento").value
+        }
+        personas.push(persona);
+        vaciarTabla(tbody);
+        popularTabla(personas, tbody);
+        mostrarTabla();
+      };
+    </script>
+	</body>
+</html>

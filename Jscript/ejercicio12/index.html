@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 12 Validacion con keyUp</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+    <header><h2>Validacion de un input</h2></header>
+    <div id="contenedor">
+      <form id="formulario" action="./respuestaFormulario.html" method="GET">
+        <label>Ingrese el dia del mes:</label>
+        <input id="dia" type="number" name="dia" min="1" max="31"/>
+        <label>Ingrese el mes:</label>
+        <input id="mes" type="number" name="mes" min="1" max="12"/>
+        <div id="operaciones">
+          <button id="enviar" type="submit">Enviar</button>
+          <button id="borrar" type="button">Reset</button>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("borrar").onclick = () => document.getElementById("formulario").reset();
+      document.getElementById("enviar").onclick = () => document.getElementById("formulario").checkValidity() ? document.getElementById("formulario").submit() : alert("El formulario no es valido");
+      document.getElementById("dia").onkeyup = () => !document.getElementById("dia").checkValidity() && alert("El valor debe estar entre 1 y 31");
+      document.getElementById("mes").onkeyup = () => !document.getElementById("mes").checkValidity() && alert("El valor debe estar entre 1 y 12");
+    </script>
+	</body>
+</html>

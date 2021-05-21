@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 16 Creacion de objetos</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+    <div id="main">
+      <button id="crear" type="button">Crear</button>
+      <button id="limpiar" type="button">Limpiar</button>
+      <button id="info" type="button">Info</button>
+      <div id="contenedor"></div>
+    </div>
+    <script type="text/javascript">
+      const vaciarContenedor = () => {
+        let miDiv = document.getElementById("contenedor");
+        while (miDiv.firstChild) {
+          miDiv.removeChild(miDiv.firstChild);
+        }
+      }
+      document.getElementById("crear").onclick = () => {
+        let miDiv = document.createElement("div");
+        let textoHtml = `<h2>Elemento creado: ${document.getElementById("contenedor").childNodes.length}</h2>`;
+        miDiv.className = "objetoDinamico";
+        miDiv.innerHTML = textoHtml;
+        document.getElementById("contenedor").appendChild(miDiv);
+      };
+      document.getElementById("limpiar").onclick = () => vaciarContenedor();
+      document.getElementById("info").onclick = () => {
+        alert(`Longitud del childNodes: ${document.getElementById("contenedor").childNodes.length}`);
+        if (document.getElementById("contenedor").childNodes.length > 0) {
+          document.getElementById("contenedor").childNodes.forEach((node, index) => {
+            alert(`Indice: ${index} innerHtml: ${node.innerHTML}`);
+          })
+        }
+      };
+    </script>
+	</body>
+</html>

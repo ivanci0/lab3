@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 11 Formulario de confirmacion</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+	</head>
+	<body>
+    <header><h2>Confirmacion de envio y de reset</h2></header>
+    <div id="contenedor">
+      <form id="formulario" action="./respuestaFormulario.html" method="GET">
+        <label>Nombre</label>
+        <input id="nombre" type="text" name="nombre"/>
+        <label>Apellido</label>
+        <input id="apellido" type="text" name="apellido"/>
+        <div id="operaciones">
+          <button id="blanquear" type="button">Blanquear</button>
+          <button id="enviar" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("blanquear").onclick = () => confirm("Esta seguro de blanquear?") && document.getElementById("formulario").reset();
+      document.getElementById("enviar").onclick = () => confirm("Esta seguro de enviar?") && document.getElementById("formulario").submit();
+    </script>
+	</body>
+</html>

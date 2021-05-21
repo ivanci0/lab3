@@ -1,0 +1,34 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+button {
+  margin: 10px 10px;
+  border: 2px solid;
+  background-color: lightskyblue;
+}
+.objetoDinamico {
+  border: 2px solid;
+  background-color: lightskyblue;
+}
+#contenedor {
+  box-sizing: border-box;
+  position: absolute;
+  overflow-y: auto;
+  top: 30%;
+  left: 20%;
+  height: 30%;
+  width: 50%;
+  padding: 10px;
+  background-color: lightgoldenrodyellow;
+}
+#main {
+  box-sizing: border-box;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: lightgray;
+}
