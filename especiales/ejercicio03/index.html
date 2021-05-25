@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 03 Ventana modal</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+    <script type="text/javascript" src="./javascript.js"></script>
+    <script type="text/javascript" src="../tipoDocs.json"></script>
+	</head>
+	<body>
+    <main id="main">
+      <h1>Div contenedor</h1>
+      <button id="btnModal" class="btn" type="button">Abre DIV modal</button>
+    </main>
+    <div id="contenedor" class="modal">
+      <div class="modalHeader"><h2>Encabezado modal</h2><button id="btnCerrar" type="button">X</button></div>
+      <div class="modalBody">
+        <header><h1>Formulario para alta - Carga de movimiento</h1></header>
+        <main>
+          <form action="./respuestaForm.html" method="GET">
+            <div class="formGroup">
+              <label>Descripcion</label>
+              <input class="formInput" type="text" name="descripcion" required/>
+            </div>
+            <div class="formGroup">
+              <label>Fecha</label>
+              <input class="formInput" type="date" name="fecha" required/>
+            </div>
+            <div class="formGroup">
+              <label>Importe</label>
+              <input class="formInput" type="number" name="importe" required/>
+            </div>
+            <div class="formGroup">
+              <label>Tipo de movimiento</label>
+              <select id="tipoDocs" class="formInput" name="tipoDoc" required></select>
+            </div>
+          </form>
+        </main>
+        <footer><h1>Pie del formulario</h1></footer>
+      </div>
+    </div>
+	</body>
+</html>

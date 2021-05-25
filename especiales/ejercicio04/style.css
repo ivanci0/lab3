@@ -1,0 +1,181 @@
+/*::::: estilos basicos :::::*/
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: goldenrod;
+  height: 10%;
+}
+header {
+  justify-content: space-around;
+}
+h1 {
+  margin: 0px;
+}
+label {
+  display: block;
+  padding-bottom: 10px;
+}
+main {
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #AAAAAA;
+}
+.btnGroup {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  height: 50px;
+  width: auto;
+  font-size: 20px;
+}
+
+
+/*::::: estilos de la tabla responsiva :::::*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+thead > tr > th {
+  font-size: 20px;
+  position: sticky; 
+  top: 0; 
+  z-index: 1;
+  background-color: coral;
+}
+.tableResponsive {
+  overflow-y: auto;
+  height: 100%;
+}
+tr {
+  height: 50px;
+}
+tbody tr:nth-child(odd) {
+background: rgba(0,0,0,.2);
+}
+.cellData {
+  text-align: center;
+}
+[campo-dato='id'] {
+  width: 5%;
+}
+
+/*::::: estilos del modal :::::*/
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  box-sizing: border-box;
+  height: 500px;
+  width: 700px;
+  background-color: lightblue;
+  visibility: hidden;
+}
+.activo {
+  visibility: visible;
+}
+.mainDesactivado {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.modalHeader {
+  background-color: gray;
+  height: 6%;
+}
+.modalHeader h2 {
+  margin: 0 0 10px;
+  display: inline;
+}
+.modalHeader button {
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+.modalHeader button:hover {
+  background-color: firebrick;
+}
+
+.modalBody {
+  height: 94%;
+}
+.modalBody header, .modalBody footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: firebrick;
+  height: 10%;
+}
+.modalBody h1 {
+  margin: 0px;
+}
+.modalBody label {
+  display: block;
+  padding-bottom: 10px;
+}
+.modalBody main {
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: lightgoldenrodyellow;
+}
+.modalBody form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.modalBody .formGroup {
+  width: 50%;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 5%;
+}
+.modalBody .formInput {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+.modalBody .control {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcoral;
+  align-self: flex-end;
+}
+#btnSubmit {
+  height: 50px;
+  max-height: 90%;
+  width: auto;
+  font-size: 20px;
+}
+
+[campo-dato='id'] {
+  width: 5%;
+}
+@media (max-width: 600px){ 
+  [campo-dato='fecha'] {
+    display:none;
+  }
+  .btn {
+    height: 40px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px){ 
+  [campo-dato='tipoDoc'] {
+    display:none;
+  }
+}

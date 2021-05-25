@@ -1,0 +1,7 @@
+[
+  {"value": "A", "description": "Factura A"},
+  {"value": "B", "description": "Factura B"},
+  {"value": "C", "description": "Factura C"},
+  {"value": "NC", "description": "Nota de Credito"},
+  {"value": "ND", "description": "Nota de Debito"}
+]

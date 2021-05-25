@@ -1,0 +1,5 @@
+{
+  "articulos": [
+    {"codArt": "ALM00", "familia": "FRSEC", "descripcion": "Almendra Peladas", "um": "KG", "fechaAlta": "2020-05-10", "saldoStock": "233"}
+  ]
+}

@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.btn {
+  height: 50px;
+  width: auto;
+  font-size: 20px;
+}
+main {
+  box-sizing: border-box;
+  padding: 1%;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: lightblue;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  box-sizing: border-box;
+  height: 500px;
+  width: 700px;
+  background-color: lightblue;
+  visibility: hidden;
+}
+.activo {
+  visibility: visible;
+}
+.mainDesactivado {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.modalHeader {
+  background-color: gray;
+  height: 6%;
+}
+.modalHeader h2 {
+  margin: 0 0 10px;
+  display: inline;
+}
+.modalHeader button {
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+.modalHeader button:hover {
+  background-color: firebrick;
+}
+
+.modalBody {
+  height: 94%;
+}
+.modalBody header, .modalBody footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #AAAAAA;
+  height: 10%;
+}
+.modalBody h1 {
+  margin: 0px;
+}
+.modalBody label {
+  display: block;
+  padding-bottom: 10px;
+}
+.modalBody main {
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: lightgoldenrodyellow;
+}
+.modalBody form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.modalBody .formGroup {
+  width: 50%;
+  font-size: 30px;
+  box-sizing: border-box;
+  padding: 5%;
+}
+.modalBody .formInput {
+  width: 100%;
+  height: 50px;
+  font-size: 30px;
+}
+.modalBody .control {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  align-self: flex-end;
+}
