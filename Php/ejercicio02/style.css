@@ -1,0 +1,7 @@
+table {
+  border: solid;
+  border-collapse: collapse;
+}
+table > tbody > tr > td {
+  border: solid;
+}

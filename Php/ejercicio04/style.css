@@ -1,0 +1,16 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+table {
+  border: solid;
+  border-collapse: collapse;
+}
+table > tbody > tr > td {
+  border: solid lightgray;
+  height: 30px;
+  width: auto;
+  background-color: lightgoldenrodyellow;
+}

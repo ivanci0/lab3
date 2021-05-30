@@ -1,0 +1,18 @@
+table {
+  border: solid;
+  border-collapse: collapse;
+}
+table > tbody > tr > td {
+  border: solid;
+  height: 30px;
+  width: 70px;
+  background-color: lightblue;
+}
+table > thead > tr > th {
+  border: solid;
+  height: 30px;
+  width: 70px;
+}
+.azulita {
+  background-color: lightblue;
+}
