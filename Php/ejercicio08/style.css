@@ -1,0 +1,46 @@
+#contenedor {
+  display: flow-root;
+  width: 90%;
+  margin: auto;
+  background-color: lightblue;
+}
+.caja {
+  float: left;
+  width: 500px;
+  height: 300px;
+  border: solid 1px;
+  padding: 5px;
+}
+.visible {
+  display: block !important;
+}
+#div1 {
+  background-color: gray;
+}
+#div2 {
+  background-color: rgb(78, 78, 189);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#div2 h2 {
+  margin-bottom: 0;
+}
+#img_container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#img_container img {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+#resultado {
+  width: 600px;
+  background-color: rgb(194, 194, 129);
+}
+#estado {
+  background-color: rgb(66, 66, 66);
+}

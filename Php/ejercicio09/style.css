@@ -1,0 +1,124 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header, footer {
+  height: 10%;
+  background-color: teal;
+}
+#contenedor {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 1%;
+  background-color: gray;
+}
+.btn {
+  height: 50px;
+  width: auto;
+  font-size: 20px;
+  display: block;
+  margin-top: 10px;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* El modal y el funcionamiento */
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  box-sizing: border-box;
+  padding: 2%;
+  border-radius: 15px;
+  height: 500px;
+  width: 700px;
+  background-color: cornflowerblue;
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.mainDesactivado {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Estilos del modal */
+
+.modalHeader {
+  background-color: gray;
+  height: 10%;
+  box-sizing: border-box;
+  padding: 1%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.modalHeader button {
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+.modalHeader button:hover {
+  background-color: firebrick;
+}
+
+.modalBody {
+  height: 90%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: rgb(197, 197, 197);
+  box-sizing: border-box;
+  padding: 1%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.modalBody h1 {
+  margin: 0px;
+}
+.modalBody .formGroup {
+  width: 100%;
+}
+.modalBody label {
+  display: inline-block;
+  padding-bottom: 10px;
+  width: 20%;
+}
+.modalBody main {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  background-color: lightgoldenrodyellow;
+}
+#resultado {
+  box-sizing: border-box;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+@media (max-width: 1000px){
+  .modal {
+    left: 20%;
+  }
+}
+@media (max-width: 900px){
+  .modal {
+    left: 10%;
+  }
+}
+@media (max-width: 800px){
+  .modal {
+    left: 0;
+  }
+}
+@media (max-width: 700px){
+  .modal {
+    width: 400px;
+  }
+}

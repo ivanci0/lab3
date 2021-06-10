@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='es'>
+  <head>
+    <title>Ejercicio 09 Form to JSON</title>
+    <meta http-equiv='Content-Type' content='text/html;charset=utf-8'/>
+    <link rel='stylesheet' type='text/css' href='./style.css'/>
+    <script src="../../especiales/jquery-3.6.0.js"></script> 
+    <script type="text/javascript" src="./javascript.js"></script>
+  </head>
+  <body>
+    <header id="header">header 10%</header>
+    <div id="contenedor">
+      <button id="btnModal" class="btn" type="button">Ventana modal</button>
+		</div>
+    <div id="elModal" class="modal">
+      <div class="modalHeader"><button id="btnCerrar" type="button">X</button></div>
+      <div class="modalBody">
+        <div class="formGroup">
+          <label>idUsuario</label>
+          <input class="formInput" type="number" id="idUsuario" required/>
+        </div>
+        <div class="formGroup">
+          <label>Login</label>
+          <input class="formInput" type="text" id="login" required/>
+        </div>
+        <div class="formGroup">
+          <label>Apellido</label>
+          <input class="formInput" type="text" id="apellido" required/>
+        </div>
+        <div class="formGroup">
+          <label>Nombre</label>
+          <input class="formInput" type="text" id="nombre" required/>
+        </div>
+        <div class="formGroup">
+          <label>Fecha</label>
+          <input class="formInput" type="date" id="fecha" required/>
+        </div>
+        <button type="button" class="btn" id="submit">Enviar</button>
+        <div id="resultado"></div>
+      </div>
+    </div>
+    <footer id="footer">footer 10%</footer>
+  </body>
+</html>
