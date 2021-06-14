@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 10 DB Lista</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="../../especiales/jquery-3.6.0.js"></script> 
+    <script type="text/javascript" src="./javascript.js"></script>
+	</head>
+	<body>
+    <header>
+      <h1>Movimientos</h1>
+      <div class="btnGroup">
+        <label>Orden:</label>
+        <input name="order" value="fecha" readonly/>
+        <button id="cargar" class="btn">Cargar datos</button>
+        <button id="vaciar" class="btn">Vaciar datos</button>
+      </div>
+    </header>
+    <main>
+      <div class="tableResponsive">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th campo-dato="id">ID</th>
+              <th campo-dato="tipoDoc">Tipo de documento</th>
+              <th campo-dato="descripcion">Descripcion</th>
+              <th campo-dato="fecha">Fecha</th>
+              <th campo-dato="importe">Importe</th>
+            </tr>
+          </thead>
+          <tbody id="bodyData">
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div id="cuenta"><h2>Nro de registros: 0</h2></div>
+      <h1>Pie del formulario</h1>
+    </footer>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 12 DB Lista ordena y filtra</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script src="../../especiales/jquery-3.6.0.js"></script> 
+    <script type="text/javascript" src="./javascript.js"></script>
+	</head>
+	<body>
+    <header>
+      <h1>Movimientos</h1>
+      <div class="btnGroup">
+        <label>Orden:</label>
+        <input id="orden" value="fecha" readonly/>
+        <button id="cargar" class="btn">Cargar datos</button>
+        <button id="vaciar" class="btn">Vaciar datos</button>
+      </div>
+    </header>
+    <main>
+      <div class="tableResponsive">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th campo-dato="id" name="ordenar" data-orden="id">ID</th>
+              <th campo-dato="tipoDoc" name="ordenar" data-orden="doc_type">Tipo de documento</th>
+              <th campo-dato="descripcion" name="ordenar" data-orden="description">Descripcion</th>
+              <th campo-dato="fecha" name="ordenar" data-orden="settlement_date">Fecha</th>
+              <th campo-dato="importe" name="ordenar" data-orden="amount">Importe</th>
+            </tr>
+          </thead>
+          <thead>
+            <tr>
+              <td><input class="tdInput" id="id"/></td>
+              <td><input class="tdInput" id="doc_type"/></td>
+              <td><input class="tdInput" id="description"/></td>
+              <td><input class="tdInput" id="settlement_date"/></td>
+              <td><input class="tdInput" id="amount"/></td>
+            </tr>
+          </thead>
+          <tbody id="bodyData">
+
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <div id="cuenta"><h2>Nro de registros: 0</h2></div>
+      <h1>Pie del formulario</h1>
+    </footer>
+	</body>
+</html>
