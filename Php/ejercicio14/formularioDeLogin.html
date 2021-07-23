@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Ejercicio 14 | Login</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: cornflowerblue;
+      }
+      form {
+        padding: 5%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 50%;
+        margin: 10% auto;
+        background-color: darkgray;
+        text-align: center;
+      }
+      h2 {
+        color: white;
+        align-self: center;
+      }
+      label {
+        color: white;
+        display: block;
+        text-align: left;
+      }
+      .formGroup {
+        margin-bottom: 20px;
+      }
+    </style>
+	</head>
+  <body>
+    <form action="./ingresoAlSistema.php" method="POST">
+      <h2>Ingreso</h2>
+      <div class="formGroup">
+        <label>Usuario: </label>
+        <input type="text" name="username"/>
+      </div>
+      <div class="formGroup">
+        <label>Clave: </label>
+        <input type="password" name="password"/>
+      </div>
+      <button type="submit">Ingresar</button>
+    </form>
+  </body>
+</html>
