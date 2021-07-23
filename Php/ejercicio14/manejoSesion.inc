@@ -3,7 +3,7 @@ if(!isset($_SESSION)) {
   session_start(); 
 }
 if(!isset($_SESSION['session_id'])) {
-  header('location:/php/ejercicio14/index.php');
+  header('location:/Php/ejercicio14/index.php');
   exit();
 }
 ?>
